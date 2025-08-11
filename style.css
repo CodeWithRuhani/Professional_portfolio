@@ -232,3 +232,247 @@ footer {
   max-height: 250px;
   object-fit: cover;
 }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ruhani Gera | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" type="image/png" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #ffe4f0;
+      color: #333;
+    }
+    header {
+      background-color: #fff;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav .logo {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 50px 20px;
+      background-color: #ffd6e7;
+    }
+    .hero-text {
+      max-width: 55%;
+      flex: 1;
+    }
+    .hero-text h1 {
+      font-size: 2.5em;
+      margin: 0;
+    }
+    .typewriter {
+      font-size: 1.2em;
+      color: #e91e63;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 2px solid;
+      animation: typing 3s steps(40, end) infinite alternate;
+    }
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+    .profile-pic {
+      width: 230px;
+      height: 230px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 8px solid #fff;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      margin-right: 10px;
+    }
+    .social-links a {
+      margin: 0 10px;
+      font-size: 1.5em;
+      color: #e91e63;
+    }
+    section {
+      padding: 40px 20px;
+    }
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    .project-card {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    .certifications-list li {
+      margin-bottom: 10px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #f8f8f8;
+      color: #555;
+    }
+    .footer-icons a {
+      margin: 0 10px;
+      font-size: 1.5em;
+      color: #e91e63;
+    }
+    #education {
+      background-color: #ffd6e7;
+      border-radius: 10px;
+      padding: 30px;
+    }
+    .download-cv {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #e91e63;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">Ruhani Gera</div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h1>Hi, I'm Ruhani Gera</h1>
+      <div class="typewriter">Aspiring Data Scientist | AI Engineer</div>
+      <p>I’m deeply fascinated by how intelligent systems can transform everyday life — from smart assistants to gesture-controlled interfaces. My journey so far has been a blend of academic learning and hands-on experimentation, where I’ve built projects that combine creativity with practical AI applications.
+         I enjoy turning complex concepts into simple, user-friendly solutions. Whether it’s building chatbots powered by LLMs or developing computer vision tools, I aim to create technology that’s both meaningful and accessible. Always curious and driven, I’m continuously exploring new tools, libraries, and ideas in the AI and data space.</p>
+      <div class="social-links">
+        <a href="mailto:ruhanigera7@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://github.com/CodeWithRuhani" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/ruhani-gera-851454300" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <a href="Ruhani(Data_Science).pdf" class="download-resume" download><i class="fas fa-download"></i> Download Resume</a>
+    </div>
+    <img src="fav.jpg" alt="Your Photo" class="profile-pic" />
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>As a final year student of Artificial Intelligence and Data science, I am building expertise in Python, SQL, Machine Learning, Deep Learning, and Data Science to contribute to the future of AI.
+    I am eager to gain real-world experience through an internship where I can apply my skills, collaborate with industry experts, and enhance my problem-solving abilities.
+    If your company is offering an internship opportunity in AI/ML or Data Science where I can contribute my skills, gain hands-on experience, and work with industry professionals, I would love the opportunity to be a part of your team.</p>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <ul>
+      <li><strong>Graduation:</strong> Sri Guru Teg Bahadur Khalsa College , Sri Anandpur Sahib Punjab (2023–2026), CGPA: 8.80</li>
+      <li><strong>12th Grade:</strong> Girls Senior Secondary School Nangal , District Roopnagar Punjab (2022–2023), Percentage: 87%</li>
+      <li><strong>10th Grade:</strong> Girls Senior Secondary School Nangal , District Roopnagar Punjab (2020–2021), Percentage: 88% </li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>Cover Page - Chatbot Project</h3>
+        <p>This project is an AI-powered chatbot built using the Gemini Large Language Model (LLM). It can understand user inputs and respond with intelligent, context-aware replies. The chatbot is designed to simulate natural human conversation and can be integrated into websites or other platforms.
+          The chatbot can be used for a variety of tasks such as answering questions, providing recommendations, casual chatting, or assisting users with predefined queries. It demonstrates the capabilities of modern language models in natural language understanding and generation.
+<br>Key features include:<br>
+🌐 Real-time conversation interface<br>
+🧠 Context-aware and dynamic responses<br>
+⚙ Easy to integrate into websites or apps<br>
+💬 Customizable prompts for specific use cases (e.g., customer support, educational help)<br>
+
+This project highlights how advanced language models like Gemini can be leveraged to build smart, conversational AI solutions.
+        </p>
+        <a href="https://github.com/CodeWithRuhani/chatbot" target="_blank">
+          <img src="chatbot cover.jpg" alt="Chatbot Cover" style="width:100%; border-radius: 10px;">
+        </a>
+      </div>
+      <div class="project-card">
+        <h3>Hand Gestures Calculator</h3>
+        <p>This project uses computer vision to recognize hand gestures via webcam and translate them into basic mathematical operations like plus, minus, multiply, and divide. It’s an educational tool that visually demonstrates how gestures can interact with machines, using OpenCV and Python for real-time processing.</p>
+        <video src="Hand gestures calculator.mp4" controls></video>
+        <a href="https://github.com/CodeWithRuhani/Hand-Gestures-Calculator" target="_blank">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <ul class="certifications-list">
+      <li>✅ IBM Certified - Artificial Intelligence Fundamentals</li>
+      <li>✅ IBM Certified - Web Development Fundamentals</li>
+      <li>✅ IBM Certified - Career Management Essentials</li>
+    </ul>
+    <p><a href="https://www.credly.com/users/ruhani-gera" target="_blank">View my certificates on Credly</a></p>
+    <div class="projects-grid">
+      <img src="AI certificate.jpg" style="width:100%; border-radius: 10px;">
+      <img src="web certificate.jpg" style="width:100%; border-radius: 10px;">
+      <img src="career management essentials certificate.jpg" style="width:100%; border-radius: 10px;">
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:ruhanigera7@gmail.com">ruhanigera7@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/ruhani-gera-851454300" target="_blank">LinkedIn Profile</a></p>
+    <p>GitHub: <a href="https://github.com/CodeWithRuhani" target="_blank">GitHub Profile</a></p>
+    <div class="social-links">
+      <a href="mailto:ruhanigera7@gmail.com"><i class="fas fa-envelope"></i></a>
+      <a href="https://github.com/CodeWithRuhani" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/ruhani-gera-851454300" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-icons">
+      <a href="mailto:ruhanigera7@gmail.com"><i class="fas fa-envelope"></i></a>
+      <a href="https://github.com/CodeWithRuhani" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/ruhani-gera-851454300" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <p>© 2025 Ruhani Gera. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+
+
+
